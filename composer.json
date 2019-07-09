@@ -1,5 +1,5 @@
 {
-  "name": "superbalist/laravel-pubsub",
+  "name": "fidelize/laravel-pubsub",
   "description": "A Pub-Sub abstraction for Laravel",
   "license": "MIT",
   "authors": [
@@ -26,6 +26,14 @@
   "extra": {
     "branch-alias": {
       "dev-master": "1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+          "Superbalist\\LaravelPubSub\\PubSubServiceProvider"
+      ],
+      "aliases": {
+          "PubSub": "Superbalist\\LaravelPubSub\\PubSubFacade"
+      }
     }
   },
   "require-dev": {
